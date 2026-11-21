@@ -1,0 +1,992 @@
+{
+  "config": {
+    "consumers": 24,
+    "physical_producers": 6,
+    "info_producers": 5,
+    "rounds": 12,
+    "round_hours": 4.0,
+    "transport": "memory",
+    "seed": 11,
+    "scammers": true,
+    "x_fraction": 0.5,
+    "friends": 3,
+    "concurrency": 8,
+    "starting_balance": 500.0,
+    "llm": false,
+    "producer_learning": true
+  },
+  "agents": 43,
+  "totals": {
+    "gmv": 2999.51,
+    "deals_completed": 77,
+    "deals_refunded": 6,
+    "platform_fee": 0.0,
+    "escrow_fees": 15.0,
+    "referral_payouts": 6.18,
+    "paid_out_to_bad_actors": 0,
+    "money_conserved": true,
+    "offers_published": 122,
+    "needs_created": 73,
+    "a2a_messages": 4769,
+    "intents": 4,
+    "forwards": 342,
+    "blocks": 18,
+    "subscriptions": 71,
+    "honest_proposals": 433,
+    "honest_acceptance": 0.7436
+  },
+  "groups": {
+    "x": {
+      "consumers": 12,
+      "mean_relevance": 0.5114,
+      "positive_rate": 0.6332,
+      "scam_share": 0.0237,
+      "shown_per_consumer_tick": 2.63,
+      "need_fulfilment": 0.758,
+      "hours_to_fulfil": 0.0,
+      "purchases_per_consumer": 3.58,
+      "surplus_per_consumer": 19.77,
+      "reject_reasons": {
+        "off-topic": 33,
+        "attention-budget": 16,
+        "disliked-category": 3,
+        "unsafe": 70,
+        "too-expensive": 19,
+        "blocked": 1
+      }
+    },
+    "no_x": {
+      "consumers": 12,
+      "mean_relevance": 0.4874,
+      "positive_rate": 0.5876,
+      "scam_share": 0.0547,
+      "shown_per_consumer_tick": 1.9,
+      "need_fulfilment": 0.759,
+      "hours_to_fulfil": 0.0,
+      "purchases_per_consumer": 2.83,
+      "surplus_per_consumer": 14.93,
+      "reject_reasons": {
+        "off-topic": 12,
+        "not-shippable": 13,
+        "unsafe": 54,
+        "too-expensive": 4
+      }
+    }
+  },
+  "preference_learning": {
+    "spearman_learned": 0.869,
+    "spearman_stated_only": 0.884,
+    "spearman_unstated_categories": 0.197,
+    "consumers_with_signal_on_unstated": 24
+  },
+  "by_disclosure": {
+    "public": {
+      "consumers": 13,
+      "need_fulfilment": 0.775,
+      "proposals_received_per_consumer": 45.3
+    },
+    "subscribers": {
+      "consumers": 8,
+      "need_fulfilment": 0.714,
+      "proposals_received_per_consumer": 23.5
+    },
+    "private": {
+      "consumers": 3,
+      "need_fulfilment": 0.75,
+      "proposals_received_per_consumer": 14.0
+    }
+  },
+  "reputation_vs_quality_spearman": 0.251,
+  "merchants": [
+    {
+      "name": "beanery",
+      "kind": "physical",
+      "honest": true,
+      "true_quality": 0.893,
+      "proposals": 10,
+      "acceptance": 0.4,
+      "blocked_by": 0,
+      "subscribers": 3,
+      "sales": 8,
+      "refunds": 0,
+      "revenue": 189.58,
+      "reputation": 0.597,
+      "labels": [],
+      "made_to_order": 0
+    },
+    {
+      "name": "pagehouse",
+      "kind": "physical",
+      "honest": true,
+      "true_quality": 0.626,
+      "proposals": 4,
+      "acceptance": 1.0,
+      "blocked_by": 0,
+      "subscribers": 1,
+      "sales": 4,
+      "refunds": 0,
+      "revenue": 76.6,
+      "reputation": 0.489,
+      "labels": [],
+      "made_to_order": 0
+    },
+    {
+      "name": "voltmart",
+      "kind": "physical",
+      "honest": true,
+      "true_quality": 0.588,
+      "proposals": 45,
+      "acceptance": 0.822,
+      "blocked_by": 0,
+      "subscribers": 5,
+      "sales": 14,
+      "refunds": 0,
+      "revenue": 1226.31,
+      "reputation": 0.895,
+      "labels": [],
+      "made_to_order": 0
+    },
+    {
+      "name": "ridgeline",
+      "kind": "physical",
+      "honest": true,
+      "true_quality": 0.804,
+      "proposals": 55,
+      "acceptance": 0.855,
+      "blocked_by": 0,
+      "subscribers": 10,
+      "sales": 19,
+      "refunds": 0,
+      "revenue": 901.57,
+      "reputation": 1.0,
+      "labels": [],
+      "made_to_order": 0
+    },
+    {
+      "name": "loomworks",
+      "kind": "physical",
+      "honest": true,
+      "true_quality": 0.812,
+      "proposals": 2,
+      "acceptance": 1.0,
+      "blocked_by": 0,
+      "subscribers": 1,
+      "sales": 1,
+      "refunds": 0,
+      "revenue": 38.17,
+      "reputation": 0.15,
+      "labels": [],
+      "made_to_order": 0
+    },
+    {
+      "name": "hearth",
+      "kind": "physical",
+      "honest": true,
+      "true_quality": 0.574,
+      "proposals": 38,
+      "acceptance": 0.842,
+      "blocked_by": 0,
+      "subscribers": 7,
+      "sales": 18,
+      "refunds": 0,
+      "revenue": 493.58,
+      "reputation": 0.841,
+      "labels": [],
+      "made_to_order": 0
+    },
+    {
+      "name": "brandz-outlet",
+      "kind": "physical",
+      "honest": false,
+      "true_quality": 0.05,
+      "proposals": 337,
+      "acceptance": 0.056,
+      "blocked_by": 14,
+      "subscribers": 0,
+      "sales": 0,
+      "refunds": 5,
+      "revenue": 0,
+      "reputation": 0.0,
+      "labels": [
+        "scam-risk"
+      ],
+      "made_to_order": 0
+    },
+    {
+      "name": "inference-weekly",
+      "kind": "information",
+      "honest": true,
+      "true_quality": 0.681,
+      "proposals": 26,
+      "acceptance": 0.923,
+      "blocked_by": 0,
+      "subscribers": 3,
+      "sales": 1,
+      "refunds": 0,
+      "revenue": 4.58,
+      "reputation": 0.163,
+      "labels": [],
+      "made_to_order": 0
+    },
+    {
+      "name": "macro-desk",
+      "kind": "information",
+      "honest": true,
+      "true_quality": 0.806,
+      "proposals": 74,
+      "acceptance": 0.662,
+      "blocked_by": 0,
+      "subscribers": 10,
+      "sales": 0,
+      "refunds": 0,
+      "revenue": 0,
+      "reputation": 0.643,
+      "labels": [],
+      "made_to_order": 0
+    },
+    {
+      "name": "lab-notes",
+      "kind": "information",
+      "honest": true,
+      "true_quality": 0.713,
+      "proposals": 45,
+      "acceptance": 0.844,
+      "blocked_by": 0,
+      "subscribers": 6,
+      "sales": 3,
+      "refunds": 0,
+      "revenue": 15.92,
+      "reputation": 0.483,
+      "labels": [],
+      "made_to_order": 0
+    },
+    {
+      "name": "pitchside",
+      "kind": "information",
+      "honest": true,
+      "true_quality": 0.833,
+      "proposals": 56,
+      "acceptance": 0.607,
+      "blocked_by": 0,
+      "subscribers": 8,
+      "sales": 1,
+      "refunds": 0,
+      "revenue": 5.15,
+      "reputation": 0.553,
+      "labels": [],
+      "made_to_order": 0
+    },
+    {
+      "name": "wok-and-whisk",
+      "kind": "information",
+      "honest": true,
+      "true_quality": 0.775,
+      "proposals": 78,
+      "acceptance": 0.654,
+      "blocked_by": 0,
+      "subscribers": 14,
+      "sales": 8,
+      "refunds": 0,
+      "revenue": 26.87,
+      "reputation": 0.804,
+      "labels": [],
+      "made_to_order": 0
+    },
+    {
+      "name": "alpha-leaks",
+      "kind": "information",
+      "honest": false,
+      "true_quality": 0.25,
+      "proposals": 49,
+      "acceptance": 0.583,
+      "blocked_by": 1,
+      "subscribers": 3,
+      "sales": 0,
+      "refunds": 1,
+      "revenue": 0,
+      "reputation": 0.0,
+      "labels": [
+        "fraud"
+      ],
+      "made_to_order": 0
+    }
+  ],
+  "rounds": [
+    {
+      "round": 0,
+      "groups": {
+        "x": {
+          "shown": 22,
+          "mean_relevance": 0.3405,
+          "positive_rate": 0.5,
+          "scam_share": 0.2727,
+          "explore_share": 0.1364,
+          "need_purchases": 0,
+          "principal_purchases": 1,
+          "refunds": 2,
+          "spend": 4.6,
+          "surplus": -0.43,
+          "received": 49,
+          "reject_reasons": {
+            "off-topic": 12,
+            "attention-budget": 1,
+            "disliked-category": 3
+          }
+        },
+        "no_x": {
+          "shown": 14,
+          "mean_relevance": 0.2197,
+          "positive_rate": 0.3571,
+          "scam_share": 0.6429,
+          "explore_share": 0.2143,
+          "need_purchases": 1,
+          "principal_purchases": 0,
+          "refunds": 2,
+          "spend": 47.42,
+          "surplus": 4.46,
+          "received": 30,
+          "reject_reasons": {
+            "off-topic": 4
+          }
+        }
+      },
+      "labels_issued": 0,
+      "honest_proposals": 9,
+      "honest_acceptance": 0.8889,
+      "spam_proposals": 36,
+      "a2a_messages": 918,
+      "x_train_loss": 0.503,
+      "produced": 9
+    },
+    {
+      "round": 1,
+      "groups": {
+        "x": {
+          "shown": 51,
+          "mean_relevance": 0.5213,
+          "positive_rate": 0.6863,
+          "scam_share": 0.0196,
+          "explore_share": 0.098,
+          "need_purchases": 3,
+          "principal_purchases": 6,
+          "refunds": 0,
+          "spend": 326.66,
+          "surplus": 64.83,
+          "received": 122,
+          "reject_reasons": {
+            "unsafe": 11,
+            "attention-budget": 7,
+            "too-expensive": 2,
+            "off-topic": 3
+          }
+        },
+        "no_x": {
+          "shown": 30,
+          "mean_relevance": 0.4564,
+          "positive_rate": 0.5,
+          "scam_share": 0.1667,
+          "explore_share": 0.1,
+          "need_purchases": 1,
+          "principal_purchases": 3,
+          "refunds": 0,
+          "spend": 95.97,
+          "surplus": 19.93,
+          "received": 67,
+          "reject_reasons": {
+            "not-shippable": 1,
+            "off-topic": 2
+          }
+        }
+      },
+      "labels_issued": 2,
+      "honest_proposals": 55,
+      "honest_acceptance": 0.8182,
+      "spam_proposals": 36,
+      "a2a_messages": 497,
+      "x_train_loss": 0.4422,
+      "produced": 11
+    },
+    {
+      "round": 2,
+      "groups": {
+        "x": {
+          "shown": 48,
+          "mean_relevance": 0.4771,
+          "positive_rate": 0.5833,
+          "scam_share": 0.0417,
+          "explore_share": 0.0625,
+          "need_purchases": 2,
+          "principal_purchases": 3,
+          "refunds": 1,
+          "spend": 85.24,
+          "surplus": 30.51,
+          "received": 82,
+          "reject_reasons": {
+            "attention-budget": 3,
+            "unsafe": 3
+          }
+        },
+        "no_x": {
+          "shown": 29,
+          "mean_relevance": 0.5431,
+          "positive_rate": 0.6552,
+          "scam_share": 0.0,
+          "explore_share": 0.1034,
+          "need_purchases": 0,
+          "principal_purchases": 0,
+          "refunds": 0,
+          "spend": 0,
+          "surplus": 0,
+          "received": 71,
+          "reject_reasons": {
+            "off-topic": 6,
+            "not-shippable": 2,
+            "unsafe": 3
+          }
+        }
+      },
+      "labels_issued": 0,
+      "honest_proposals": 54,
+      "honest_acceptance": 0.7963,
+      "spam_proposals": 43,
+      "a2a_messages": 437,
+      "x_train_loss": 0.3057,
+      "produced": 8
+    },
+    {
+      "round": 3,
+      "groups": {
+        "x": {
+          "shown": 42,
+          "mean_relevance": 0.5105,
+          "positive_rate": 0.619,
+          "scam_share": 0.0,
+          "explore_share": 0.0714,
+          "need_purchases": 0,
+          "principal_purchases": 1,
+          "refunds": 0,
+          "spend": 26.34,
+          "surplus": 6.12,
+          "received": 90,
+          "reject_reasons": {
+            "unsafe": 9,
+            "attention-budget": 2,
+            "off-topic": 6,
+            "too-expensive": 2
+          }
+        },
+        "no_x": {
+          "shown": 21,
+          "mean_relevance": 0.4711,
+          "positive_rate": 0.5714,
+          "scam_share": 0.0476,
+          "explore_share": 0.1905,
+          "need_purchases": 1,
+          "principal_purchases": 0,
+          "refunds": 1,
+          "spend": 31.44,
+          "surplus": 10.06,
+          "received": 73,
+          "reject_reasons": {
+            "not-shippable": 1,
+            "unsafe": 6
+          }
+        }
+      },
+      "labels_issued": 1,
+      "honest_proposals": 46,
+      "honest_acceptance": 0.7391,
+      "spam_proposals": 23,
+      "a2a_messages": 315,
+      "x_train_loss": 0.2514,
+      "produced": 8
+    },
+    {
+      "round": 4,
+      "groups": {
+        "x": {
+          "shown": 36,
+          "mean_relevance": 0.5158,
+          "positive_rate": 0.7778,
+          "scam_share": 0.0,
+          "explore_share": 0.0833,
+          "need_purchases": 3,
+          "principal_purchases": 3,
+          "refunds": 0,
+          "spend": 242.71,
+          "surplus": 36.12,
+          "received": 108,
+          "reject_reasons": {
+            "unsafe": 15,
+            "too-expensive": 1,
+            "attention-budget": 1,
+            "blocked": 1,
+            "off-topic": 1
+          }
+        },
+        "no_x": {
+          "shown": 25,
+          "mean_relevance": 0.5099,
+          "positive_rate": 0.52,
+          "scam_share": 0.0,
+          "explore_share": 0.2,
+          "need_purchases": 1,
+          "principal_purchases": 0,
+          "refunds": 0,
+          "spend": 31.44,
+          "surplus": 4.44,
+          "received": 87,
+          "reject_reasons": {
+            "unsafe": 7,
+            "too-expensive": 1
+          }
+        }
+      },
+      "labels_issued": 1,
+      "honest_proposals": 49,
+      "honest_acceptance": 0.7551,
+      "spam_proposals": 30,
+      "a2a_messages": 373,
+      "x_train_loss": 0.2222,
+      "produced": 10
+    },
+    {
+      "round": 5,
+      "groups": {
+        "x": {
+          "shown": 28,
+          "mean_relevance": 0.5735,
+          "positive_rate": 0.6786,
+          "scam_share": 0.0,
+          "explore_share": 0.1071,
+          "need_purchases": 0,
+          "principal_purchases": 1,
+          "refunds": 0,
+          "spend": 50.62,
+          "surplus": 5.13,
+          "received": 88,
+          "reject_reasons": {
+            "unsafe": 13,
+            "off-topic": 1
+          }
+        },
+        "no_x": {
+          "shown": 19,
+          "mean_relevance": 0.5432,
+          "positive_rate": 0.7368,
+          "scam_share": 0.0,
+          "explore_share": 0.1579,
+          "need_purchases": 1,
+          "principal_purchases": 1,
+          "refunds": 0,
+          "spend": 56.67,
+          "surplus": 9.48,
+          "received": 64,
+          "reject_reasons": {
+            "unsafe": 11,
+            "too-expensive": 1
+          }
+        }
+      },
+      "labels_issued": 0,
+      "honest_proposals": 41,
+      "honest_acceptance": 0.7073,
+      "spam_proposals": 24,
+      "a2a_messages": 320,
+      "x_train_loss": 0.21,
+      "produced": 8
+    },
+    {
+      "round": 6,
+      "groups": {
+        "x": {
+          "shown": 21,
+          "mean_relevance": 0.4292,
+          "positive_rate": 0.4762,
+          "scam_share": 0.0,
+          "explore_share": 0.3333,
+          "need_purchases": 2,
+          "principal_purchases": 2,
+          "refunds": 0,
+          "spend": 253.77,
+          "surplus": 36.23,
+          "received": 114,
+          "reject_reasons": {
+            "too-expensive": 1
+          }
+        },
+        "no_x": {
+          "shown": 23,
+          "mean_relevance": 0.5257,
+          "positive_rate": 0.6957,
+          "scam_share": 0.0,
+          "explore_share": 0.1739,
+          "need_purchases": 2,
+          "principal_purchases": 1,
+          "refunds": 0,
+          "spend": 87.25,
+          "surplus": 28.31,
+          "received": 78,
+          "reject_reasons": {
+            "not-shippable": 6,
+            "unsafe": 3
+          }
+        }
+      },
+      "labels_issued": 0,
+      "honest_proposals": 13,
+      "honest_acceptance": 0.8462,
+      "spam_proposals": 25,
+      "a2a_messages": 273,
+      "x_train_loss": 0.202,
+      "produced": 8
+    },
+    {
+      "round": 7,
+      "groups": {
+        "x": {
+          "shown": 8,
+          "mean_relevance": 0.6259,
+          "positive_rate": 0.625,
+          "scam_share": 0.0,
+          "explore_share": 0.125,
+          "need_purchases": 1,
+          "principal_purchases": 0,
+          "refunds": 0,
+          "spend": 3.61,
+          "surplus": 3.08,
+          "received": 55,
+          "reject_reasons": {
+            "too-expensive": 2,
+            "off-topic": 3,
+            "unsafe": 1
+          }
+        },
+        "no_x": {
+          "shown": 17,
+          "mean_relevance": 0.3803,
+          "positive_rate": 0.6471,
+          "scam_share": 0.0,
+          "explore_share": 0.1765,
+          "need_purchases": 3,
+          "principal_purchases": 2,
+          "refunds": 0,
+          "spend": 168.22,
+          "surplus": 24.05,
+          "received": 77,
+          "reject_reasons": {
+            "not-shippable": 2
+          }
+        }
+      },
+      "labels_issued": 0,
+      "honest_proposals": 5,
+      "honest_acceptance": 0.0,
+      "spam_proposals": 24,
+      "a2a_messages": 200,
+      "x_train_loss": 0.1837,
+      "produced": 7
+    },
+    {
+      "round": 8,
+      "groups": {
+        "x": {
+          "shown": 19,
+          "mean_relevance": 0.5693,
+          "positive_rate": 0.7368,
+          "scam_share": 0.0,
+          "explore_share": 0.1579,
+          "need_purchases": 2,
+          "principal_purchases": 2,
+          "refunds": 0,
+          "spend": 113.29,
+          "surplus": 22.71,
+          "received": 86,
+          "reject_reasons": {
+            "off-topic": 3,
+            "too-expensive": 3
+          }
+        },
+        "no_x": {
+          "shown": 13,
+          "mean_relevance": 0.4919,
+          "positive_rate": 0.3846,
+          "scam_share": 0.0,
+          "explore_share": 0.1538,
+          "need_purchases": 2,
+          "principal_purchases": 1,
+          "refunds": 0,
+          "spend": 53.83,
+          "surplus": 0.8,
+          "received": 52,
+          "reject_reasons": {
+            "unsafe": 2
+          }
+        }
+      },
+      "labels_issued": 0,
+      "honest_proposals": 9,
+      "honest_acceptance": 0.7778,
+      "spam_proposals": 24,
+      "a2a_messages": 235,
+      "x_train_loss": 0.1764,
+      "produced": 8
+    },
+    {
+      "round": 9,
+      "groups": {
+        "x": {
+          "shown": 35,
+          "mean_relevance": 0.5751,
+          "positive_rate": 0.5714,
+          "scam_share": 0.0,
+          "explore_share": 0.0571,
+          "need_purchases": 0,
+          "principal_purchases": 2,
+          "refunds": 0,
+          "spend": 143.9,
+          "surplus": 20.06,
+          "received": 106,
+          "reject_reasons": {
+            "unsafe": 6,
+            "too-expensive": 1,
+            "off-topic": 2
+          }
+        },
+        "no_x": {
+          "shown": 26,
+          "mean_relevance": 0.5018,
+          "positive_rate": 0.5769,
+          "scam_share": 0.0,
+          "explore_share": 0.1538,
+          "need_purchases": 2,
+          "principal_purchases": 2,
+          "refunds": 0,
+          "spend": 341.17,
+          "surplus": 33.04,
+          "received": 98,
+          "reject_reasons": {
+            "not-shippable": 1,
+            "unsafe": 12
+          }
+        }
+      },
+      "labels_issued": 0,
+      "honest_proposals": 52,
+      "honest_acceptance": 0.75,
+      "spam_proposals": 24,
+      "a2a_messages": 357,
+      "x_train_loss": 0.1632,
+      "produced": 8
+    },
+    {
+      "round": 10,
+      "groups": {
+        "x": {
+          "shown": 35,
+          "mean_relevance": 0.5711,
+          "positive_rate": 0.6571,
+          "scam_share": 0.0,
+          "explore_share": 0.0571,
+          "need_purchases": 0,
+          "principal_purchases": 7,
+          "refunds": 0,
+          "spend": 330.91,
+          "surplus": 13.95,
+          "received": 116,
+          "reject_reasons": {
+            "unsafe": 6,
+            "too-expensive": 1,
+            "off-topic": 2
+          }
+        },
+        "no_x": {
+          "shown": 21,
+          "mean_relevance": 0.5484,
+          "positive_rate": 0.8095,
+          "scam_share": 0.0,
+          "explore_share": 0.0952,
+          "need_purchases": 1,
+          "principal_purchases": 3,
+          "refunds": 0,
+          "spend": 176.29,
+          "surplus": 18.26,
+          "received": 66,
+          "reject_reasons": {
+            "unsafe": 5,
+            "too-expensive": 1
+          }
+        }
+      },
+      "labels_issued": 0,
+      "honest_proposals": 55,
+      "honest_acceptance": 0.6545,
+      "spam_proposals": 24,
+      "a2a_messages": 451,
+      "x_train_loss": 0.1997,
+      "produced": 10
+    },
+    {
+      "round": 11,
+      "groups": {
+        "x": {
+          "shown": 34,
+          "mean_relevance": 0.4653,
+          "positive_rate": 0.6176,
+          "scam_share": 0.0,
+          "explore_share": 0.1765,
+          "need_purchases": 1,
+          "principal_purchases": 1,
+          "refunds": 0,
+          "spend": 138.55,
+          "surplus": -1.11,
+          "received": 173,
+          "reject_reasons": {
+            "unsafe": 6,
+            "attention-budget": 2,
+            "too-expensive": 6
+          }
+        },
+        "no_x": {
+          "shown": 36,
+          "mean_relevance": 0.5156,
+          "positive_rate": 0.5278,
+          "scam_share": 0.0,
+          "explore_share": 0.1389,
+          "need_purchases": 3,
+          "principal_purchases": 3,
+          "refunds": 0,
+          "spend": 189.61,
+          "surplus": 26.3,
+          "received": 115,
+          "reject_reasons": {
+            "unsafe": 5,
+            "too-expensive": 1
+          }
+        }
+      },
+      "labels_issued": 0,
+      "honest_proposals": 45,
+      "honest_acceptance": 0.7333,
+      "spam_proposals": 24,
+      "a2a_messages": 393,
+      "x_train_loss": 0.1683,
+      "produced": 8
+    }
+  ],
+  "decision_examples": [
+    {
+      "action": "accept",
+      "target": "sha256:ab1992399e7bf3da98176315d53de68a9f3b5bcb69815e99e03538288ded751e",
+      "reason": "exploring 'outdoor', which the principal never rated (picked by x_rank)",
+      "by": "rule",
+      "args": {
+        "explore": true
+      },
+      "t": 1790144000.0,
+      "title": "water filter"
+    },
+    {
+      "action": "reject",
+      "target": "sha256:ac6c57db9b05448a60a911383295bd1d51052cef10e77b63563cc9da6cc17b6c",
+      "reason": "flagged by a subscribed labeler / safety rules",
+      "by": "rule",
+      "args": {
+        "reasons": [
+          "unsafe"
+        ]
+      },
+      "t": 1790158400.0,
+      "title": "Premium portable ssd"
+    },
+    {
+      "action": "accept",
+      "target": "sha256:a6921dbd8f44f8c47b4146b1cb81edfbde73357f9ccbad12e17aa9f121757728",
+      "reason": "principal's interest in 'markets' is 0.80; utility 0.71; recommended by a friend",
+      "by": "rule",
+      "t": 1790158400.0,
+      "title": "commodities note"
+    },
+    {
+      "action": "accept",
+      "target": "sha256:a6921dbd8f44f8c47b4146b1cb81edfbde73357f9ccbad12e17aa9f121757728",
+      "reason": "principal's interest in 'markets' is 0.69; utility 0.60",
+      "by": "rule",
+      "t": 1790144000.0,
+      "title": "commodities note"
+    },
+    {
+      "action": "accept",
+      "target": "sha256:76aee06a8a38800d6613b64ebe3f1070ad4e75bef90c7d63694d193d816fd755",
+      "reason": "principal's interest in 'cooking' is 0.75; utility 0.71",
+      "by": "rule",
+      "t": 1790158400.0,
+      "title": "knife skills guide"
+    },
+    {
+      "action": "accept",
+      "target": "sha256:6454106e1d6070138c32f33054fac8a5cbd129435f2b34e4dd5c66677d474b16",
+      "reason": "principal's interest in 'markets' is 0.71; utility 0.62",
+      "by": "rule",
+      "t": 1790158400.0,
+      "title": "commodities note"
+    },
+    {
+      "action": "accept",
+      "target": "sha256:ab1992399e7bf3da98176315d53de68a9f3b5bcb69815e99e03538288ded751e",
+      "reason": "principal's interest in 'outdoor' is 0.68; utility 0.61; x_rank position 3",
+      "by": "rule",
+      "t": 1790158400.0,
+      "title": "water filter"
+    },
+    {
+      "action": "accept",
+      "target": "sha256:88275c013812175c89a58cc3f84a8e3de2c854114de2e76d15718ad2c80d6d3d",
+      "reason": "exploring 'science', which the principal never rated (picked by x_rank)",
+      "by": "rule",
+      "args": {
+        "explore": true
+      },
+      "t": 1790158400.0,
+      "title": "fusion progress recap"
+    },
+    {
+      "action": "reject",
+      "target": "sha256:5e4ec24736bd71b316d39958db83f5c0710c7e7ff4abfb4057da949db7e1a8e2",
+      "reason": "relevant, but attention for this tick is used up",
+      "by": "rule",
+      "args": {
+        "reasons": [
+          "attention-budget"
+        ]
+      },
+      "t": 1790158400.0,
+      "title": "sourdough troubleshooting"
+    },
+    {
+      "action": "accept",
+      "target": "sha256:41ca586d53209975f63b7c61705129cd3d836ae6e3d9d0734731c436b2d80728",
+      "reason": "principal's interest in 'cooking' is 0.60; utility 0.60; recommended by a friend",
+      "by": "rule",
+      "t": 1790158400.0,
+      "title": "sourdough troubleshooting"
+    },
+    {
+      "action": "accept",
+      "target": "sha256:8ec6cadb9484cb81dc41048848f1033f97fc9a7b89ae9ff7b0cb05435c7ef6b1",
+      "reason": "principal's interest in 'cooking' is 0.60; utility 0.58; recommended by a friend",
+      "by": "rule",
+      "t": 1790158400.0,
+      "title": "weeknight noodle recipes"
+    },
+    {
+      "action": "accept",
+      "target": "sha256:c1a8d054a23be4b0d1e9f3873e953d67951940c3023b17ff94e300e9cc52ac48",
+      "reason": "principal's interest in 'coffee' is 0.89; utility 0.58",
+      "by": "rule",
+      "t": 1790158400.0,
+      "title": "espresso blend"
+    }
+  ],
+  "wall_seconds": 20.1
+}

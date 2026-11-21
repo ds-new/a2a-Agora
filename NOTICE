@@ -1,0 +1,18 @@
+A2A Agora
+Copyright 2026 the A2A Agora authors
+
+This product re-implements in Python, and adapts to a decentralized setting,
+designs from the following Apache-2.0 licensed projects:
+
+  * xai-org/x-algorithm (commit 9081b332f25634db1c3249ebd3d56fba332fd2e6)
+    candidate-pipeline, home-mixer, xai-value-model (scoring math and default
+    weights), phoenix (multi-action prediction, candidate isolation, hash-based
+    embeddings), vm-ranker (DPP reranking), user-cred-v2, simclusters,
+    visibility-filtering.
+  * a2aproject/A2A (commit 5f931b8a25fe66789f987ec4a55fc16ee9fe41ee)
+    Agent2Agent protocol v1.0 data model and JSON-RPC binding.
+  * google-agentic-commerce/AP2 (commit e1ea56db72a6385bce3e5c1112b3a56ce60acb43)
+    Agent Payments Protocol v0.2 mandate types and constraint names.
+
+No source code from twitter/the-algorithm or twitter/the-algorithm-ml (AGPL-3.0)
+is included; three default parameter values from them are cited in comments.

@@ -1,0 +1,122 @@
+{
+  "seeds": [
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "x.mean_relevance": {
+    "mean": 0.5343,
+    "sd": 0.027
+  },
+  "x.positive_rate": {
+    "mean": 0.6407,
+    "sd": 0.0218
+  },
+  "x.scam_share": {
+    "mean": 0.0513,
+    "sd": 0.0207
+  },
+  "x.need_fulfilment": {
+    "mean": 0.8274,
+    "sd": 0.0415
+  },
+  "x.hours_to_fulfil": {
+    "mean": 0.0,
+    "sd": 0.0
+  },
+  "x.purchases_per_consumer": {
+    "mean": 4.7,
+    "sd": 0.5751
+  },
+  "x.surplus_per_consumer": {
+    "mean": 42.816,
+    "sd": 18.6657
+  },
+  "no_x.mean_relevance": {
+    "mean": 0.5052,
+    "sd": 0.0446
+  },
+  "no_x.positive_rate": {
+    "mean": 0.611,
+    "sd": 0.0249
+  },
+  "no_x.scam_share": {
+    "mean": 0.0717,
+    "sd": 0.0198
+  },
+  "no_x.need_fulfilment": {
+    "mean": 0.8398,
+    "sd": 0.0214
+  },
+  "no_x.hours_to_fulfil": {
+    "mean": 0.0,
+    "sd": 0.0
+  },
+  "no_x.purchases_per_consumer": {
+    "mean": 3.182,
+    "sd": 0.3499
+  },
+  "no_x.surplus_per_consumer": {
+    "mean": 24.288,
+    "sd": 5.4817
+  },
+  "gmv": {
+    "mean": 2478.222,
+    "sd": 396.4616
+  },
+  "deals_completed": {
+    "mean": 94.6,
+    "sd": 5.8138
+  },
+  "deals_refunded": {
+    "mean": 8.4,
+    "sd": 2.881
+  },
+  "paid_out_to_bad_actors": {
+    "mean": 0.0,
+    "sd": 0.0
+  },
+  "a2a_messages": {
+    "mean": 4882.6,
+    "sd": 77.3712
+  },
+  "honest_proposals": {
+    "mean": 421.4,
+    "sd": 21.326
+  },
+  "honest_acceptance": {
+    "mean": 0.7139,
+    "sd": 0.0528
+  },
+  "money_conserved_all": true,
+  "spearman_learned": {
+    "mean": 0.8802,
+    "sd": 0.0143
+  },
+  "spearman_stated_only": {
+    "mean": 0.8952,
+    "sd": 0.0117
+  },
+  "spearman_unstated_categories": {
+    "mean": 0.2842,
+    "sd": 0.0881
+  },
+  "first_round_acceptance": {
+    "mean": 0.9244,
+    "sd": 0.1172
+  },
+  "last_round_acceptance": {
+    "mean": 0.61,
+    "sd": 0.0913
+  },
+  "spammer_acceptance": {
+    "mean": 0.0668,
+    "sd": 0.0145
+  },
+  "spammer_blocked_by": {
+    "mean": 12.6,
+    "sd": 4.0988
+  }
+}

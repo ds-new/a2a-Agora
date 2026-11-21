@@ -1,0 +1,33 @@
+[project]
+name = "a2a-agora"
+version = "0.2.0"
+description = "A de-platformized network of agents that decide for their principals what goods and information to publish, receive and buy, over A2A v1.0; the X recommender stack is one optional skill"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+dependencies = [
+  "numpy>=1.26",
+  "networkx>=3.2",
+  "cryptography>=42",
+  "starlette>=0.37",
+  "uvicorn>=0.29",
+  "sse-starlette>=2.0",
+  "httpx>=0.27",  # the code also accepts the API-compatible httpx2
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+agora-sim = "agora.sim.run:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["agora*"]
